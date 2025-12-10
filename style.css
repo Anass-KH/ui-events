@@ -89,7 +89,7 @@ a[href="#design"] {
  a[href="#frontend"] {
 
  }
- 
+
 .frontend{
   animation-name: scaleup;
   animation-duration: 1s;
@@ -113,3 +113,27 @@ a[href="#design"] {
 }
 
 
+/* & */
+
+a[href="#and"] {
+
+}
+
+.translate{
+animation-name: moveright;
+animation-duration: 0.5s;
+animation-iteration-count: 1;
+}
+
+@keyframes moveright {
+0% { 
+}
+
+50% { 
+   transform: translateX(50px);
+}
+
+100% {
+}
+
+}

@@ -42,4 +42,21 @@ scaleLink.addEventListener("animationend", function () {
 });
 
 
+// Stap 1: querySelector
+const translateLink = document.querySelector('a[href="#and"]');
+
+// Stap 2: addEventListener
+translateLink.addEventListener("click", function () {
+ 
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  translateLink.classList.add("translate");
+
+});
+
+// Verwijderd het Animatie event zodra de animatie is afgelopen
+translateLink.addEventListener("animationend", function () {
+  translateLink.classList.remove("translate");
+
+});
+
 
