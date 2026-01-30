@@ -138,7 +138,7 @@ animation-iteration-count: 1;
 
 }
 
-/* Development*/
+/* Development */
  
 a[href="#development"] {
 
@@ -159,4 +159,26 @@ a[href="#development"] {
   80%  { transform: translate(5px, 5px); }
   100% { transform: translate(0, 0); }
 }
+
+
+/* Events */
+
+a[href="#events"] {
+ --font: 1em;
+  font-size: var(--font);
+}
+
+
+/* sprint-5 */
+
+a[href="#sprint-5"] {
+
+}
+
+
+
+
+
+
+
 

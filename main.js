@@ -79,3 +79,29 @@ developmentLink.addEventListener("animationend", function () {
 });
 
 
+/* Events */
+
+// Stap 1: querySelector
+const eventsLink = document.querySelector('a[href="#events"]')
+let size = 15;
+
+// Stap 2: addEventListener
+eventsLink.addEventListener("wheel", function(Z) {
+console.log(Z)
+
+if (Z.deltaY > 0) {
+  size++;
+  }
+
+  else if  (Z.deltaY < 0) {
+    size--;
+  }
+   
+  eventsLink.style.setProperty1("--font", size + "em")
+});
+
+
+
+
+
+
