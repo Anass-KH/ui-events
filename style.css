@@ -169,10 +169,36 @@ a[href="#events"] {
 }
 
 
-/* sprint-5 */
+/* --------------------sprint 5---------------- */
 
 a[href="#sprint-5"] {
 
+}
+
+.sprint5kleur {
+  animation-name: kleuranimatie;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes kleuranimatie {
+  0% {
+    background-color:red
+   
+  }
+  25% {
+    background-color: blue
+  }
+  50% {
+    background-color: green
+  }
+  75% {
+    background-color: yellow
+  }
+  100% {
+    background-color: plum
+  }
 }
 
 

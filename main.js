@@ -79,6 +79,21 @@ developmentLink.addEventListener("animationend", function () {
 });
 
 
+/* Sprint-5 focus → kleuren animatie */
+
+// Stap 1
+const sprint5link = document.querySelector('a[href="#sprint-5"]')
+
+// Stap 2
+sprint5link.addEventListener('click', sprint5Handler)
+
+// Stap 3
+function sprint5Handler() {
+  sprint5link.classList.add('sprint5kleur')
+}
+
+
+
 /* Events */
 
 // Stap 1: querySelector
