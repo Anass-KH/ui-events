@@ -201,8 +201,16 @@ a[href="#sprint-5"] {
   }
 }
 
+/* Fix mouseover → verander tekst in de link */
 
 
+a[href="#fix"] {
+
+}
+
+.brokenhover {
+  transition:  1s ease;
+}
 
 
 

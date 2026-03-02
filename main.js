@@ -115,6 +115,19 @@ if (Z.deltaY > 0) {
   eventsLink.style.setProperty1("--font", size + "em")
 });
 
+/* Fix mouseover → verander tekst in de link */
+
+// Stap 1
+const fixLink = document.querySelector('a[href="#fix"]')
+
+// Stap 2
+fixLink.classList.add("brokenhover")
+
+// Stap 3 Hover → verander tekst
+fixLink.addEventListener("mouseenter", function() {
+  fixLink.innerText = "Broken"
+})
+
 
 
 
