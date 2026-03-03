@@ -213,6 +213,23 @@ a[href="#fix"] {
 }
 
 
+/* The: Mouseout → rotate animatie */
+
+.rotatethe {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+
+@keyframes rotate {
+  50% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.2);
+  }
+}
 
 
 

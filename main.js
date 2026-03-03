@@ -123,11 +123,26 @@ const fixLink = document.querySelector('a[href="#fix"]')
 // Stap 2
 fixLink.classList.add("brokenhover")
 
-// Stap 3 Hover → verander tekst
+// Stap 3 
 fixLink.addEventListener("mouseenter", function() {
   fixLink.innerText = "Broken"
 })
 
+
+// The: Mouseout → rotate animatie
+
+// Stap 1: querySelector
+const theButton = document.querySelector('a[href="#the"]');
+
+// Stap 2: addEventListener
+theButton.addEventListener("mouseout", function () {
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  theButton.classList.add("rotatethe");
+});
+
+theButton.addEventListener("animationend", function (){
+  theButton.classList.remove("rotatethe");
+});
 
 
 
