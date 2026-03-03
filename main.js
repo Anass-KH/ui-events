@@ -132,16 +132,31 @@ fixLink.addEventListener("mouseenter", function() {
 // The: Mouseout → rotate animatie
 
 // Stap 1: querySelector
-const theButton = document.querySelector('a[href="#the"]');
+const theLink = document.querySelector('a[href="#the"]');
 
 // Stap 2: addEventListener
-theButton.addEventListener("mouseout", function () {
+theLink.addEventListener("mouseout", function () {
   // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
-  theButton.classList.add("rotatethe");
+  theLink.classList.add("rotatethe");
 });
 
 theButton.addEventListener("animationend", function (){
   theButton.classList.remove("rotatethe");
+});
+
+// Flow: Mousedown en mouseup → flip en terug
+
+// Stap 1: querySelector
+const flowLink = document.querySelector('a[href="#flow"]');
+// Stap 2: addEventListeners
+flowLink.addEventListener("mousedown", function () {
+  // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+  flowLink.classList.add("flipflow");
+});
+
+
+flowLink.addEventListener("mouseup", function () {
+  flowLink.classList.remove("flipflow");
 });
 
 

@@ -169,7 +169,7 @@ a[href="#events"] {
 }
 
 
-/* --------------------sprint 5---------------- */
+/* sprint 5 */
 
 a[href="#sprint-5"] {
 
@@ -231,5 +231,15 @@ a[href="#fix"] {
   }
 }
 
+/* Flow */
+
+a[href="#flow"] {
+  transition: transform 1s ease;
+  transform: rotate(0deg);
+}
+
+.flipflow {
+  transform: rotateY(200deg);
+}
 
 
