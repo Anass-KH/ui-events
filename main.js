@@ -85,10 +85,10 @@ developmentLink.addEventListener("animationend", function () {
 const sprint5link = document.querySelector('a[href="#sprint-5"]')
 
 // Stap 2
-sprint5link.addEventListener('click', sprint5Handler)
+sprint5link.addEventListener('focus', sprint5)
 
 // Stap 3
-function sprint5Handler() {
+function sprint5() {
   sprint5link.classList.add('sprint5kleur')
 }
 
